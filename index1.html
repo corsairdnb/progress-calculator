@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>General info form</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow, noarchive">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i">
+    <link rel="stylesheet" href="css/calculator.css">
+</head>
+<body>
+
+<div class="container">
+	<div class="row">
+    
+        <h3>Общая информация о доме</h3>
+        <p>Заполните, пожалуйста, все графы</p>
+
+        <form action="" class="form-horizontal">
+            <div class="form-group">
+                <label for="adress" class="col-sm-2 control-label">Напишите Ваш адрес</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="adress" placeholder="Улица, дом">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="square" class="col-sm-2 control-label">Укажите площадь</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="square" placeholder="кв.м.">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="year" class="col-sm-2 control-label">Год ввода в эксплуатацию</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="year" placeholder="Укажите год">
+                </div>
+            </div>
+			<div class="form-group">
+                <label for="iznos" class="col-sm-2 control-label">Износ здания</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="iznos" placeholder="%">
+                </div>
+            </div>
+			<div class="form-group">
+                <label for="floor" class="col-sm-2 control-label">Этажность</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="floor" placeholder="Количество этажей">
+                </div>
+            </div>
+			<div class="form-group">
+                <label for="square2" class="col-sm-2 control-label">Площадь мест общего пользования</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="square2" placeholder="кв.м.">
+                </div>
+            </div>
+			<div class="form-group">
+                <label for="population" class="col-sm-2 control-label">Плотность заселения</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="population" placeholder="">
+                </div>
+            </div>
+			<div class="form-group">
+                <label for="itp" class="col-sm-2 control-label">Наличие  ИТП с автоматическим регулированием</label>
+                <div class="col-sm-10">
+                    <label class="radio-inline"><input type="radio" name="itp" id="itp" checked>Отсутствует</label>
+					<label class="radio-inline"><input type="radio" name="itp" id="itp">Имеется</label>
+                </div>
+            </div>
+			<div class="form-group">
+                <label for="lift" class="col-sm-2 control-label">Наличие лифта</label>
+                <div class="col-sm-10">
+                    <label class="radio-inline"><input type="radio" name="lift" id="lift" checked>Есть</label>
+					<label class="radio-inline"><input type="radio" name="lift" id="lift">Нет</label>
+                </div>
+            </div>
+        </form>
+    </div>
+	
+	<div class="container">
+        <h3>Данные по энергоресурсам</h3>
+        <p>Укажите электроэнергия (КВт/ч)- значение счетчика на дату</p>
+
+        <form action="" class="form-horizontal">
+            <div class="form-group">
+                <label for="date_begin1" class="col-sm-2 control-label">Дата (начало периода)</label>
+                <div class="col-sm-4">
+                    <input type="date" class="form-control" id="date_begin1" placeholder="Дата">
+                </div>
+				<label for="value_begin1" class="col-sm-2 control-label">Показания счетчика</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" id="value_begin1" placeholder="">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="date_end1" class="col-sm-2 control-label">Дата (конец периода)</label>
+                <div class="col-sm-4">
+                    <input type="date" class="form-control" id="date_end1" placeholder="Дата">
+                </div>
+				<label for="value_end1" class="col-sm-2 control-label">Показания счетчика</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" id="value_end1" placeholder="">
+                </div>
+            </div>
+			
+			<p>Укажите все счетчики элекпотребления (марки) и срок  следующей поверки</p>
+			
+			<div class="form-group">
+                <label for="model1" class="col-sm-2 control-label">Марка</label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control" id="model1" placeholder="Марка счетчика">
+                </div>
+				<label for="Amp" class="col-sm-2 control-label">Ампераж</label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control" id="Amp" placeholder="А">
+                </div>
+				<label for="V" class="col-sm-2 control-label">Вольтаж</label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control" id="V" placeholder="В">
+                </div>
+            </div>
+			
+                <p><b>Добавить еще один счетчик</b></p>
+			
+			<p>Укажите тепловую энергию (Гкал) - значение счетчика на дату</p>
+			
+            <div class="form-group">
+                <label for="date_begin2" class="col-sm-2 control-label">Дата (начало периода)</label>
+                <div class="col-sm-4">
+                    <input type="date" class="form-control" id="date_begin2" placeholder="Дата">
+                </div>
+				<label for="value_begin2" class="col-sm-2 control-label">Показания счетчика</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" id="value_begin2" placeholder="">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="date_end2" class="col-sm-2 control-label">Дата (конец периода)</label>
+                <div class="col-sm-4">
+                    <input type="date" class="form-control" id="date_end2" placeholder="Дата">
+                </div>
+				<label for="value_end2" class="col-sm-2 control-label">Показания счетчика</label>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" id="value_end2" placeholder="">
+                </div>
+            </div>	
+			
+			<p>Укажите все тепловычеслители  (марки) и срок  следующей поверки</p>
+			
+			<div class="form-group">
+                <label for="model2" class="col-sm-2 control-label">Марка</label>
+                <div class="col-sm-3">
+                    <input type="text" class="form-control" id="model2" placeholder="Марка тепловычеслителя">
+                </div>			
+            </div>	
+
+			<p><b>Добавить еще один счетчик</b></p>
+			
+		</form>
+	</div>
+</div>
+
+<script src="./js/jquery-3.1.1.js"></script>
+<script src="./bootstrap/js/bootstrap.js"></script>
+<script src="js/calculator.js"></script>
+
+
+</body>
+</html>
